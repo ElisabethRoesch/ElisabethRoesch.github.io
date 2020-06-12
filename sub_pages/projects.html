@@ -14,11 +14,13 @@ body {
 Dynamical systems with intricate behaviour are all-pervasive in biology. Many of the most interesting biological processes indicate the presence of bifurcations, i.e. phenomena where a small change in a system parameter causes qualitatively different behaviour. Bifurcation theory has become a rich field of research in its own right and evaluating the bifurcation behaviour of a given dynamical system can be challenging. An even greater challenge, however, is to learn the bifurcation structure of dynamical systems from data, where the precise model structure is not known. Here we study one aspects of this problem: the practical implications that the presence of bifurcations has on our ability to infer model parameters and initial conditions from empirical data; we focus on the canonical co-dimension 1 bifurcations and provide a comprehensive analysis of how dynamics, and our ability to infer kinetic parameters are linked. The picture thus emerging is surprisingly nuanced and suggests that identification of the qualitative dynamics — the bifurcation diagram — should precede any attempt at inferring kinetic parameters.</p>
 <h3>All things Approximate Bayesian Computation (ABC)</h3>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-</p>
+  Approximate Bayesian computation (ABC) is an important framework within which to infer the structure and parameters of a systems biology model.
+  It is especially suitable for biological systems with stochastic and nonlinear dynamics, for which the likelihood functions are intractable.
+  However, the associated computational cost often limits ABC to models that are relatively quick to simulate in practice.
+  We here present a Julia package, GpABC, that implements parameter inference and model selection for deterministic or stochastic models using
+  (i) standard rejection ABC or sequential Monte Carlo ABC or
+  (ii) ABC with Gaussian process emulation.
+  The latter significantly reduces the computational cost.</p>
 <h3>Neural Differential Equations</h3>
 <p>
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
