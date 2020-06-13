@@ -2,7 +2,7 @@
 <head>
   <style>
 body {
-  font-family: Arial;
+  font-family: Monospace;
   margin: 25px;
 }
 p {
@@ -13,17 +13,28 @@ p {
 <body>
 <br><br><br><br><br>
 <h2>Selected projects </h2>
-<h3>Feature selection methods</h3>
-<p>
-  Mass spectrometry is an essential tool for the identification and quantification of proteins.
-  With analysis frameworks like MaxQuant and Perseus researchers are offered the possibility of deep profiling clinical samples and performing systems-wide quantitative proteomic studies.
-  In this work, first the variable selection process of the classification analysis of the deepest system-wide quantitative proteomic study of breast cancer tumors until 2016 by Tyanova et al. is analyzed.
-  Second, the study is redone with all variable selection methods implemented in Perseus.
-  Third, Perseus is extended by six new methods via a new Plug-in "Additional Learning" using the machine learning workbench WEKA.
-  Eventually, studies are redone again.
-  With the new methods GainRatio, Symmetrical Uncertainty, InfoGain, ReliefF, Correlation and OneR, up to 100% of all signal proteins, which differ significantly in one breast cancer subtype and were discovered by Tyanova et al., could be verified. Additionally, the new method Correlation achieves a improvement of 13.1% compared to the Perseus default variable selection method ANOVA for ERPR prediction, the new method ReliefF selects proteins, resulting an error rate decreasement of 17.5% for Her2 prediction and finally, for TN prediction, the also new method Symmetrical Uncertainty reduced the error rate by 19.07%, again compared to ANOVA.</p>
+<h3>Neural Differential Equations</h3>
+<p  style = "font-family: Arial";>
+  The predictive power of machine learning models often exceeds that of mechanistic modeling approaches.
+    However, the interpretability of purely data-driven models, without any mechanistic basis is often complicated and predictive power by itself can be a poor metric by which we might want to judge different methods.
+    In this work, we focus on the relatively new modeling techniques of neural ODEs.
+    We discuss how they relate to machine learning and mechanistic models, with the potential to narrow the gulf between these two frameworks:
+    they constitute a class of hybrid models by integrating ideas from data-driven and dynamical systems approaches.
+    Training neural ODEs as representations of dynamical systems data has its own specific demands and we here propose a collocation scheme as a fast and efficient training strategy.
+    This alleviates the need for costly ODE solvers and we illustrate the advantages that collocation approaches offer,
+    as well as their robustness to qualitative features of a dynamical system, and the quantity and quality of observational data. We focus on systems that exemplify some of the hallmarks of complex dynamical systems encountered in systems biology, and we map out how these methods can be used in the analysis of mathematical models of cellular and physiological processes.
+   </p>
+   <h3>All things Approximate Bayesian Computation (ABC)</h3>
+   <p  style = "font-family: Arial";>
+     Approximate Bayesian computation (ABC) is an important framework within which to infer the structure and parameters of a systems biology model.
+     It is especially suitable for biological systems with stochastic and nonlinear dynamics, for which the likelihood functions are intractable.
+     However, the associated computational cost often limits ABC to models that are relatively quick to simulate in practice.
+     We here present a Julia package, GpABC, that implements parameter inference and model selection for deterministic or stochastic models using
+     (i) standard rejection ABC or sequential Monte Carlo ABC or
+     (ii) ABC with Gaussian process emulation.
+     The latter significantly reduces the computational cost.</p>
 <h3>Bifurcations in dynamical systems </h3>
-<p>
+<p style = "font-family: Arial";>
 Dynamical systems with intricate behaviour are all-pervasive in biology.
 Many of the most interesting biological processes indicate the presence of bifurcations,
 i.e. phenomena where a small change in a system parameter causes qualitatively different behaviour.
@@ -35,26 +46,16 @@ the practical implications that the presence of bifurcations has on our ability 
 we focus on the canonical co-dimension 1 bifurcations and provide a comprehensive analysis of how dynamics,
 and our ability to infer kinetic parameters are linked.
 The picture thus emerging is surprisingly nuanced and suggests that identification of the qualitative dynamics - the bifurcation diagram - should precede any attempt at inferring kinetic parameters.</p>
-<h3>All things Approximate Bayesian Computation (ABC)</h3>
-<p>
-  Approximate Bayesian computation (ABC) is an important framework within which to infer the structure and parameters of a systems biology model.
-  It is especially suitable for biological systems with stochastic and nonlinear dynamics, for which the likelihood functions are intractable.
-  However, the associated computational cost often limits ABC to models that are relatively quick to simulate in practice.
-  We here present a Julia package, GpABC, that implements parameter inference and model selection for deterministic or stochastic models using
-  (i) standard rejection ABC or sequential Monte Carlo ABC or
-  (ii) ABC with Gaussian process emulation.
-  The latter significantly reduces the computational cost.</p>
-<h3>Neural Differential Equations</h3>
-<p>
-  The predictive power of machine learning models often exceeds that of mechanistic modeling approaches.
-    However, the interpretability of purely data-driven models, without any mechanistic basis is often complicated and predictive power by itself can be a poor metric by which we might want to judge different methods.
-    In this work, we focus on the relatively new modeling techniques of neural ODEs.
-    We discuss how they relate to machine learning and mechanistic models, with the potential to narrow the gulf between these two frameworks:
-    they constitute a class of hybrid models by integrating ideas from data-driven and dynamical systems approaches.
-    Training neural ODEs as representations of dynamical systems data has its own specific demands and we here propose a collocation scheme as a fast and efficient training strategy.
-    This alleviates the need for costly ODE solvers and we illustrate the advantages that collocation approaches offer,
-    as well as their robustness to qualitative features of a dynamical system, and the quantity and quality of observational data. We focus on systems that exemplify some of the hallmarks of complex dynamical systems encountered in systems biology, and we map out how these methods can be used in the analysis of mathematical models of cellular and physiological processes.
-   </p>
+
+  <h3>Feature selection methods</h3>
+  <p style = "font-family: Arial";>
+    Mass spectrometry is an essential tool for the identification and quantification of proteins.
+    With analysis frameworks like MaxQuant and Perseus researchers are offered the possibility of deep profiling clinical samples and performing systems-wide quantitative proteomic studies.
+    In this work, first the variable selection process of the classification analysis of the deepest system-wide quantitative proteomic study of breast cancer tumors until 2016 by Tyanova et al. is analyzed.
+    Second, the study is redone with all variable selection methods implemented in Perseus.
+    Third, Perseus is extended by six new methods via a new Plug-in "Additional Learning" using the machine learning workbench WEKA.
+    Eventually, studies are redone again.
+    With the new methods GainRatio, Symmetrical Uncertainty, InfoGain, ReliefF, Correlation and OneR, up to 100% of all signal proteins, which differ significantly in one breast cancer subtype and were discovered by Tyanova et al., could be verified. Additionally, the new method Correlation achieves a improvement of 13.1% compared to the Perseus default variable selection method ANOVA for ERPR prediction, the new method ReliefF selects proteins, resulting an error rate decreasement of 17.5% for Her2 prediction and finally, for TN prediction, the also new method Symmetrical Uncertainty reduced the error rate by 19.07%, again compared to ANOVA.</p>
 <p><a href="../index.html" style="color:red" >home</a> <a href="about.html" style="color:lime">about me</a> <a href="projects.html" style="color:magenta" >projects</a> <a href="contacts.html" style="color:coral">contacts</a></p>
 </body>
 </html>
